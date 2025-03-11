@@ -13,7 +13,7 @@ class Router:
         else:
             return print("Server wasn't added to the router.")
 
-    def unlink(self, server):
+    def unlink(self, server: Server):
         try:
             self.servers.remove(server)
         except KeyError:
